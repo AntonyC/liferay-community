@@ -1,0 +1,12 @@
+apps-demo:
+  cssURLs:
+    - apps/demo/style-*.css
+  friendlyURLMapping: apps-demo
+  htmlElementName: apps-demo
+  instanceable: false
+  name: Apps Demo
+  portletCategoryName: category.client-extensions
+  type: customElement
+  urls:
+    - apps/demo/main-*.js
+  useESM: true

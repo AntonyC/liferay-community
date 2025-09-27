@@ -6,7 +6,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const outDir = resolve(__dirname, "build-vite");
-
+console.log("--: ", outDir);
 const getEntries = () => {
   const _getEntries = (filePathPattern: string | string[]) => {
     return Object.fromEntries(
