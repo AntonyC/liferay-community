@@ -44,4 +44,11 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    outDir,
+    emptyOutDir: true,
+    rollupOptions: {
+      input: getEntries(),
+    },
+  },
 });
