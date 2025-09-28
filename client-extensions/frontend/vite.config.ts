@@ -51,4 +51,8 @@ export default defineConfig({
       input: getEntries(),
     },
   },
+  server: {
+    port: 5178,
+    strictPort: true,
+	},
 });
