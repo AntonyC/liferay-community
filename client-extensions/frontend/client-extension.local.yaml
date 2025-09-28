@@ -1,0 +1,3 @@
+apps-demo:
+  urls:
+    - http://localhost:5178/src/apps/demo/main.ts

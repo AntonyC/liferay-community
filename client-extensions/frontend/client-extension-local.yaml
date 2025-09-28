@@ -1,3 +1,0 @@
-apps-demo:
-  urls:
-    - http://localhost:3000/src/apps/demo/main.ts
