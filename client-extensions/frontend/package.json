@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "pnpm run build && blade gw deploy -x :yarnInstall -x packageRunBuild",
+    "deployLocal": "pnpm run build && blade gw deployLocal -x :yarnInstall -x packageRunBuild",
   },
   "dependencies": {
     "react": "^19.1.1",
