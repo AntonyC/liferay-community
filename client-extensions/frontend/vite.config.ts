@@ -4,6 +4,7 @@ import { resolve } from "path";
 import { glob } from "glob";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import tailwindcss from "@tailwindcss/vite";
 
 const outDir = resolve(__dirname, "build-vite");
 console.log("--: ", outDir);
@@ -25,7 +26,7 @@ const getEntries = () => {
   let entries = {
     ..._getEntries([
       `src/apps/**/main.ts`,
-      `src/apps/**/style.scss`,
+      `src/apps/**/style.css`,
       `src/global/**/*.js`,
       `src/global/**/*.css`,
     ]),
@@ -37,13 +38,7 @@ const getEntries = () => {
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react({
-      babel: {
-        plugins: [["babel-plugin-react-compiler"]],
-      },
-    }),
-  ],
+  plugins: [react(), tailwindcss()],
   build: {
     outDir,
     emptyOutDir: true,
@@ -54,5 +49,5 @@ export default defineConfig({
   server: {
     port: 5178,
     strictPort: true,
-	},
+  },
 });

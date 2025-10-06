@@ -1,5 +1,5 @@
 import App from "./App";
-import "./style.scss";
+import "./style.css";
 
 const ELEMENT_ID = "apps-demo";
 

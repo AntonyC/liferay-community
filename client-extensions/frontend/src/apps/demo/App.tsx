@@ -18,7 +18,7 @@ export default class App extends HTMLElement {
               <img src={reactLogo} className="logo react" alt="React logo" />
             </a>
           </div>
-          <h1>Vite + React</h1>
+          <h1 className="text-3xl font-bold underline">Vite + React</h1>
           <div className="card">
             {/* <button onClick={() => setCount((count) => count + 1)}>
             countttt is {count}
