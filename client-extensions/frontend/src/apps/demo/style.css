@@ -1,1 +1,4 @@
-@import "tailwindcss";
+apps-demo {
+  @import "tailwindcss";
+  background-color: #fafafa;
+}

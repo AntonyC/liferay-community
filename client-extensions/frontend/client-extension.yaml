@@ -1,3 +1,6 @@
+assemble:
+  - from: build-vite/assets
+    into: static
 apps-demo:
   cssURLs:
     - apps/demo/style-*.css

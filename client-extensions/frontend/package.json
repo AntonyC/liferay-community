@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "pnpm run build && blade gw deploy -x :yarnInstall -x packageRunBuild",
-    "deployLocal": "pnpm run build && blade gw deployLocal -x :yarnInstall -x packageRunBuild"
+    "deployLocal": "pnpm run build && blade gw deployLocal -x :yarnInstall -x packageRunBuild && pnpm run dev"
   },
   "dependencies": {
     "@clayui/icon": "^3.144.1",
