@@ -1,3 +1,6 @@
 apps-demo:
   urls:
     - http://localhost:5178/src/apps/demo/main.ts
+apps-stake:
+  urls:
+    - http://localhost:5178/src/apps/stake/main.ts

@@ -10,3 +10,15 @@ apps-demo:
   urls:
     - apps/demo/main-*.js
   useESM: true
+apps-stake:
+  cssURLs:
+    - apps/stake/style-*.css
+  friendlyURLMapping: apps-stake
+  htmlElementName: apps-stake
+  instanceable: false
+  name: Apps Stake
+  portletCategoryName: category.client-extensions
+  type: customElement
+  urls:
+    - apps/stake/main-*.js
+  useESM: true
