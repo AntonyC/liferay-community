@@ -13,7 +13,7 @@ import { Card, Button } from '../../components';
 
 export const Claim = () => {
 	const stakeContract = useStakeContract();
-	const { address, isConnected } = useAccount();
+	const { isConnected } = useAccount();
 	const { rewardsData, canClaim, refresh } = useRewards();
 	const [claimLoading, setClaimLoading] = useState(false);
 	const { data } = useWalletClient();
