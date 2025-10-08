@@ -1,0 +1,16 @@
+import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { arbitrum, base, mainnet, optimism, polygon, sepolia } from 'wagmi/chains';
+
+export const configWagmi = getDefaultConfig({
+	appName: 'Stake App',
+	projectId: 'YOUR_PROJECT_ID',
+	chains: [
+		mainnet,
+		polygon,
+		optimism,
+		arbitrum,
+		base,
+		...(import.meta.env.VITE_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
+	],
+	ssr: true,
+});

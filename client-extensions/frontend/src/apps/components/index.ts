@@ -1,3 +1,3 @@
-export * from "./layouts/Header";
-export * from "./layouts/Layout";
-export * from "./ui";
+export * from '../stake/components/layouts/Header';
+export * from '../stake/components/layouts/Layout';
+export * from '../stake/components/ui';

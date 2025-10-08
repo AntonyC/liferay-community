@@ -1,13 +1,14 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+// import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 import { glob } from "glob";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import tailwindcss from "@tailwindcss/vite";
+import ReactRefresh from "@vitejs/plugin-react-refresh";
 
 const outDir = resolve(__dirname, "build-vite");
-console.log("--: ", outDir);
+console.log("------process.env-: ", process.env.VITE_PUBLIC_ENABLE_TESTNETS);
 const getEntries = () => {
   const _getEntries = (filePathPattern: string | string[]) => {
     return Object.fromEntries(
@@ -32,13 +33,12 @@ const getEntries = () => {
     ]),
   };
 
-  //console.log(entries);
   return entries;
 };
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [ReactRefresh(), tailwindcss()],
   build: {
     outDir,
     emptyOutDir: true,
