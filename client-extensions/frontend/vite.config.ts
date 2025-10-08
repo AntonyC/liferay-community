@@ -8,7 +8,6 @@ import tailwindcss from "@tailwindcss/vite";
 import ReactRefresh from "@vitejs/plugin-react-refresh";
 
 const outDir = resolve(__dirname, "build-vite");
-console.log("------process.env-: ", process.env.VITE_PUBLIC_ENABLE_TESTNETS);
 const getEntries = () => {
   const _getEntries = (filePathPattern: string | string[]) => {
     return Object.fromEntries(

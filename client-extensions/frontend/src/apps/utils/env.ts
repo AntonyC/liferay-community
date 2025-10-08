@@ -1,4 +1,4 @@
-import { type Address, zeroAddress } from "viem";
+import { type Address, zeroAddress } from 'viem';
 
 export const StakeContractAddress =
-  (process.env.NEXT_PUBLIC_STAKE_ADDRESS as Address) || zeroAddress;
+	(import.meta.env.VITE_PUBLIC_STAKE_ADDRESS as Address) || zeroAddress;
