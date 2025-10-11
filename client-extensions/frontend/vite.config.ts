@@ -1,11 +1,11 @@
 import { defineConfig } from "vite";
-// import react from "@vitejs/plugin-react";
+import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 import { glob } from "glob";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import tailwindcss from "@tailwindcss/vite";
-import ReactRefresh from "@vitejs/plugin-react-refresh";
+// import ReactRefresh from "@vitejs/plugin-react-refresh";
 
 const outDir = resolve(__dirname, "build-vite");
 const getEntries = () => {
@@ -37,7 +37,7 @@ const getEntries = () => {
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [ReactRefresh(), tailwindcss()],
+  plugins: [react(), tailwindcss()],
   build: {
     outDir,
     emptyOutDir: true,
